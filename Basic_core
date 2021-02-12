@@ -27,6 +27,25 @@ bean factory get called first.
 
 this annotation is used on for those members that need to defined. @required is checked by beanpostprocessor, now RequiredAnnotationBeanPostprocessor
 is a class that need to be configured cause it use BeanPostProcess which further check if any member is @Requried
+//bean vs component
+
+explict creation of bean-> only applicable for methods
+@Component (and @Service and @Repository) are used to auto-detect and auto-configure beans using classpath scanning.
+ There's an implicit one-to-one mapping between the annotated class and the bean (i.e. one bean per class). 
+ Control of wiring is quite limited with this approach, since it's purely declarative.
+
+@Bean is used to explicitly declare a single bean, rather than letting Spring do it automatically as above.
+ It decouples the declaration of the bean from the class definition, and lets you create and configure beans
+  exactly how you choose.
+ 
+  // to @Bean method, can give multiple alias name.
+  
+  you can register the bean in context by youself or let the bena defined by spring itself.
+  
+  class with @Component, need to be scanned by container by using @ComponentScan,
+  but there is no need of @ComponentScan if you define the bean using @bean. because by this you explicitly creating
+  the bean
+
 
 
 
