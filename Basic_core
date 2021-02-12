@@ -1,0 +1,52 @@
+ques.Difference between applicationcontext and beanfactory?
+ans->////////https://stackoverflow.com/questions/243385/beanfactory-vs-applicationcontext
+
+if parent class have instances of other classes
+
+ex-
+class traingle{
+
+Point pointa;
+Point pointb;
+}
+then even if you make Point class as prototype(whiich does create new instances everytime you call)
+
+but as traingle class is singleton so won't create new instances for Point claass everytime you call it
+//thus we use Applicationcontextaware
+ques; difference betweem applicationcontext close method vs applicationcontext registershutdownhook
+///https://stackoverflow.com/questions/42018044/what-is-the-difference-between-registershutdownhook-and-close
+--inshort close() - it close the application context immediatelly, while registershutdownhook close the application context when the jvm end.
+//Bean post processor
+Just before bean is initialize(or going to initialize)-->BeanPostProcess interface postprocessBeforeInitialization run
+and after bean get initialized in context---> //     //       //            //       postprocessAfterInitialization run
+so it is clear, that class that implement the BeanPosprocess interface get initialize in the context first. it is only class that initialize
+at the very first moment.
+///BeanFactoryPostProcessor
+bean factory get called first.
+//@Required
+
+this annotation is used on for those members that need to defined. @required is checked by beanpostprocessor, now RequiredAnnotationBeanPostprocessor
+is a class that need to be configured cause it use BeanPostProcess which further check if any member is @Requried
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

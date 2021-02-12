@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	
+<bean id="traingle" class="myteam.manish_company.Traingle">
+<property name="pointA" ref="zerop"></property>
+<property name="pointB" ref="onep"></property>
+<property name="pointC" ref="twop"></property>
+</bean>
+
+<bean id="zerop" class="myteam.manish_company.Point">
+<property name="x" value="2"></property>
+<property name="y" value="3"></property>
+</bean>
+
+<bean id="onep" class="myteam.manish_company.Point">
+<property name="x" value="10"></property>
+<property name="y" value="12"></property>
+</bean>
+
+<bean id="twop" class="myteam.manish_company.Point">
+<property name="x" value="23"></property>
+<property name="y" value="25"></property>
+</bean>
+
+<!-- <bean class="myteam.manish_company.DisplaynameBeanPostProcessor"></bean>
+ -->
+ <bean class="myteam.manish_company.DisplaynameBeanPostProcessor"></bean>
+ 
+  <bean class="myteam.manish_company.MyBeanfactory"></bean>
+ 
+
+
+</beans>
+
+
+
+
+
