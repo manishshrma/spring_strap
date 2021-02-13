@@ -1,28 +1,31 @@
 package annotated_spring;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Principal {
 	
 	String name;
 	int age;
 	
 	
-	public Principal(String name, int age) {
-		super();
-		this.name = name;
-		this.age = age;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}
+//	public Principal(String name, int age) {
+//		super();
+//		this.name = name;
+//		this.age = age;
+//	}
+//	public String getName() {
+//		return name;
+//	}
+//	public void setName(String name) {
+//		this.name = name;
+//	}
+//	public int getAge() {
+//		return age;
+//	}
+//	public void setAge(int age) {
+//		this.age = age;
+//	}
 	
 	
 

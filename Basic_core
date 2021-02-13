@@ -45,7 +45,25 @@ explict creation of bean-> only applicable for methods
   class with @Component, need to be scanned by container by using @ComponentScan,
   but there is no need of @ComponentScan if you define the bean using @bean. because by this you explicitly creating
   the bean
+  
+  ///////@primary
+  suppose in class College, there is interface instanitaion through @Autowire
+  ex- class College{
+  
+  private Teacher teacher; // this is interface
+  }
 
+class A implement Teacher{@override teach method()
+}
+class B implements Teacher{@override teach methid()
+}
+
+during @Autowiring which class implementation this teacher want,
+if you use @primary at any implementation class, then that class as act as pprimary, means only that class implementation
+will be used.
+or if you want to use some specific class implementation then @Qualifer annotatin as @Qualifer("name of the implementatin
+class here")
+NOTE:::
 
 
 
