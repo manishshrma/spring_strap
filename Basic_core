@@ -66,6 +66,19 @@ class here")
 NOTE:::
 
 
+///////////////////////////////////////////AOP////////////////////////////////////////////////////////////////////////////////////////////
+Advice are applied only to methods
+example of advice is @Before()
+
+in spirng AOP , advices are only applicable for methods.But AspectJ provide advice to applicable for others things also.
+example you can apply advices for instances variables also.
+
+
+
+
+
+
+
 
 
 
