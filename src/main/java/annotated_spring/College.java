@@ -42,6 +42,9 @@ public class College {
 	{
 		this.teacher.teach();
 		System.out.println(this.killername);
+		System.out.println("hello world test 1");
+		System.out.println("hello world test 1- in dev1");
+
 	}
 	
 
