@@ -46,6 +46,9 @@ public class College {
 		System.out.println("hello world part1 dev2");
 
 		System.out.println("this code line should be cherry picked in another branch");
+
+		System.out.println("here come another comments");
+
 	}
 
 }
