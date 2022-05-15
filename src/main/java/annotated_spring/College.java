@@ -53,6 +53,7 @@ public class College {
 
 		System.out.println("this message will also go for cherry pick- add another fresh 2");
 		System.out.println("this message will also go for cherry pick- add another fresh 3");
+		System.out.println("add one more line for cherry pick commit- add 1 cp");
 
 
 
