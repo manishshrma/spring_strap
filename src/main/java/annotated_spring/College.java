@@ -51,6 +51,8 @@ public class College {
 		System.out.println("here come another comments");
 		System.out.println("add  another comment in the dev branch");
 		System.out.println("this message should go for cherry pick");
+		System.out.println("this message should go for cherry pick 2");
+
 
 	}
 
