@@ -57,10 +57,6 @@ public class College {
 		System.out.println("add x more line for cherry pick commit- add 2 cp");
 
 
-
-
-
-
 	}
 
 }
