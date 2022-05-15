@@ -51,6 +51,9 @@ public class College {
 		System.out.println("here come another comments");
 		System.out.println("this message should go for cherry pick");
 
+		System.out.println("this message will also go for cherry pick- add another fresh 2");
+
+
 
 
 	}
